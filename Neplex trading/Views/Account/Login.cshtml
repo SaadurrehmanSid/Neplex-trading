@@ -1,0 +1,96 @@
+﻿@model LoginVM
+@{
+    ViewData["Title"] = "Login";
+}
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validate/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-inner">
+                    <ul>
+                        <li class="home">
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                            <span><i class="fa fa-angle-right"></i></span>
+                        </li>
+                        <li class="category3"><span>Login</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="customer-login-area">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-xs-12">
+                <div class="customer-login my-account">
+                    <form method="post" asp-controller="Account" asp-action="login" class="login">
+
+                        <input type="hidden" asp-for="ReturnUrl" />
+                        <div class="form-fields">
+                            <h2>Login</h2>
+                            <div asp-validation-summary="All" class="text-danger"></div>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="input-text" />
+                                <span asp-validation-for="Email"></span>
+                            </p>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="input-text" />
+                                <span asp-validation-for="Password"></span>
+                            </p>
+                        </div>
+                        <div class="form-action">
+                            <p class="lost_password"> <a href="#">Lost your password?</a></p>
+                            <div class="actions-log">
+                                <input type="submit" class="button" name="login" value="Login">
+                            </div>
+                            <label asp-for="RememberMe" class="inline">
+                                <input asp-for="RememberMe"> Remember me
+                            </label>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

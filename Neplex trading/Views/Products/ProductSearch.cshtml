@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Product>
+@{
+    ViewData["Title"] = "SearchedProduct";
+}
+
+<h2>SearchedProduct</h2>
+
+
+@foreach (var product in Model)
+{
+    <p>@product.ProductName</p>
+    <img  src="~/img/@product.ProductImage" />
+    <p>@product.ProductArtNumber</p>
+    
+}
+

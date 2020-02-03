@@ -1,0 +1,372 @@
+﻿@inject SignInManager<IdentityUser>  signInManager
+@inject ICategoryRepo categoryRepo 
+
+@{ 
+    var categories = categoryRepo.GetCategories();
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Neplex Trading | @ViewData["Title"]</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon
+    ============================================ -->
+    <link rel="shortcut icon" type="image/x-icon" href="~/img/favicon.ico">
+
+    <!-- Fonts
+    ============================================ -->
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900' rel='stylesheet' type='text/css'>
+
+    <!-- CSS  -->
+    <!-- Bootstrap CSS
+    ============================================ -->
+
+
+    <link rel="stylesheet" href="~/css/bootstrap.min.css">
+
+    <!-- owl.carousel CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/owl.carousel.css">
+
+    <!-- owl.theme CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/owl.theme.css">
+
+    <!-- owl.transitions CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/owl.transitions.css">
+
+    <!-- font-awesome.min CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/font-awesome.min.css">
+
+    <!-- font-icon CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/fonts/font-icon.css">
+
+    <!-- jquery-ui CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/jquery-ui.css">
+
+    <!-- mobile menu CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/meanmenu.min.css">
+
+    <!-- nivo slider CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/custom-slider/css/nivo-slider.css" type="text/css" />
+    <link rel="stylesheet" href="~/custom-slider/css/preview.css" type="text/css" media="screen" />
+
+    <!-- animate CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/animate.css">
+
+    <!-- normalize CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/normalize.css">
+
+    <!-- main CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/main.css">
+
+    <!-- style CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/style.css">
+
+    <!-- responsive CSS
+    ============================================ -->
+    <link rel="stylesheet" href="~/css/responsive.css">
+
+    <script src="~/js/vendor/modernizr-2.8.3.min.js"></script>
+
+
+
+</head>
+<body class="home-one">
+
+    <header class="short-stor">
+        <div class="container-fluid">
+            <div class="row">
+                <!-- logo start -->
+                <div class="col-md-3 col-sm-12 text-center nopadding-right">
+                    <div class="top-logo">
+                        <a href="index.html"><img src="img/logo.gif" alt="" /></a>
+                    </div>
+                </div>
+                <!-- logo end -->
+                <!-- mainmenu area start -->
+                <div class="col-md-6 text-center">
+                    <div class="mainmenu">
+                        <nav>
+                            <ul>
+                                <li class="expand">
+                                    <a asp-controller="Home" asp-action="Index">Home</a>
+                                </li>
+                                @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                                {
+                                    <li>
+                                        <a asp-controller="Products" asp-action="AdminIndex">Manage Products</a>
+                                    </li>
+                                    <li><a asp-controller="Categories" asp-action="Index">Manage Categories</a></li>
+                                    <li><a asp-controller="Admin" asp-action="ListRoles">Manage Role</a></li>
+                                }
+                                else
+                                {
+                                    <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                                    <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                                    <li>
+                                        <a asp-controller="Products" asp-action="Index">Products</a>
+                                    </li>
+                                    <li class="expand">
+                                        <a href="#">Categories</a>
+                                        <ul class="restrain sub-menu">
+
+                                            @foreach (var category in categories)
+                                            {
+                                                <li><a asp-controller="Categories" asp-action="ProductByCategory" asp-route-id="@category.CartegoryId">@category.Name</a></li>
+                                            }
+                                        </ul>
+                                    </li>
+                                }
+
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 mobile-menu-area">
+                            <div class="mobile-menu hidden-md hidden-lg" id="mob-menu">
+                                <span class="mobile-menu-title">Menu</span>
+                                <nav>
+                                    <ul>
+                                        <li>
+                                            <a asp-controller="Home" asp-action="Index">Home</a>
+
+                                        </li>
+                                        @if (signInManager.IsSignedIn(User) && User.IsInRole("Admin"))
+                                        {
+                                            <li>
+                                                <a asp-controller="Products" asp-action="AdminIndex">Manage Products</a>
+                                            </li>
+                                            <li><a asp-controller="Categories" asp-action="Index">Manage Categories</a></li>
+                                            <li><a asp-controller="Admin" asp-action="ListRoles">Manage Role</a></li>
+
+                                        }
+                                        else
+                                        {
+                                            <li><a asp-controller="Home" asp-action="About">About Us</a></li>
+                                            <li>
+                                                <a asp-controller="Products" asp-action="Index">Products</a>
+
+                                            </li>
+                                            <li>
+                                                <a>Categories</a>
+                                                <ul>
+
+                                                    @foreach (var category in categories)
+                                                    {
+                                                        <li><a asp-controller="Categoies" asp-action="ProductByCategory" asp-route-id="@category.CartegoryId">@category.Name</a></li>
+                                                    }
+                                                </ul>
+                                            </li>
+                                        }
+
+
+
+                                        <li><a asp-controller="Home" asp-action="Contact">Contact Us</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- mobile menu end -->
+                </div>
+                <!-- mainmenu area end -->
+                <!-- top details area start -->
+                <div class="col-md-3 col-sm-12 nopadding-left">
+                    <div class="top-detail">
+                        <!-- language division start -->
+                        <div class="disflow">
+                            @if (signInManager.IsSignedIn(User))
+                            {
+                                <div class="expand lang-all disflow">
+                                    <a asp-controller="Account" asp-action="Register">Hi  @User.Identity.Name</a>
+
+                                </div>
+                                <div class="expand lang-all disflow">
+                                    <a asp-controller="Account" asp-action="logout">Logout</a>
+
+                                </div>
+                            }
+                            else
+                            {
+                                <div class="expand lang-all disflow">
+                                    <a asp-controller="Account" asp-action="Register">Register</a>
+
+                                </div>
+                                <div class="expand lang-all disflow">
+                                    <a asp-controller="Account" asp-action="login">Login</a>
+
+                                </div>
+                            }
+                        </div>
+                        <!-- language division end -->
+                        <!-- addcart top start -->
+                        @await Component.InvokeAsync("ShoppingCartBucket")
+                        <!-- addcart top start -->
+                        <!-- search divition start -->
+                        <div class="disflow">
+                            <div class="header-search expand">
+                                <div class="search-icon fa fa-search"></div>
+                                <div class="product-search restrain">
+                                    <div class="container nopadding-right">
+                                        <form method="get" asp-controller="Products" asp-action="ProductSearch">
+                                            <div class="input-group">
+                                                <input type="text" class="form-control" maxlength="128" placeholder="Search product..." name="searcheditem">
+                                                <span class="input-group-btn">
+                                                    <button type="submit" class="btn btn-default"><i class="fa fa-search"></i></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- search divition end -->
+
+                    </div>
+                </div>
+                <!-- top details area end -->
+            </div>
+        </div>
+    </header>
+    <div>
+        <partial name="_CookieConsentPartial" />
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer>
+        <div class="info-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-4">
+                        <div class="info-fcontainer">
+                            <div class="infof-icon">
+                                <i class="fa fa-map-marker"></i>
+                            </div>
+                            <div class="infof-content">
+                                <h3>Our Address</h3>
+                                <p>Street Baba Nanak Wali Daska(Sialkot)</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="info-fcontainer">
+                            <div class="infof-icon">
+                                <i class="fa fa-phone"></i>
+                            </div>
+                            <div class="infof-content">
+                                <h3>Phone Support</h3>
+                                <p style="margin-bottom:unset">+923476100348</p>
+                                <p style="margin-left:43px; margin-top:unset">+923030616001</p>
+                              
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-4">
+                        <div class="info-fcontainer">
+                            <div class="infof-icon">
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                            <div class="infof-content">
+                                <h3>Email Support</h3>
+                                <p>ranansveedrana001@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 hidden-sm">
+                        <div class="info-fcontainer">
+                            <div class="infof-icon">
+                                <i class="fa fa-clock-o"></i>
+                            </div>
+                            <div class="infof-content">
+                                <h3>Openning Hour</h3>
+                                <p>24 hours service</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="address-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-xs-12">
+                        <address>Copyright © <a asp-controller="Home" asp-action="Index">Neplex trading.</a> All Rights Reserved</address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer address area end -->
+    </footer>
+
+
+    @RenderSection("Scripts", required: false)
+
+ 
+    <script src="~/js/vendor/jquery-1.11.3.min.js"></script>
+
+    <!-- bootstrap js
+    ============================================ -->
+    <script src="~/js/bootstrap.min.js"></script>
+
+    <!-- Nivo slider js
+    ============================================ -->
+    <script src="~/custom-slider/js/jquery.nivo.slider.js" type="text/javascript"></script>
+    <script src="~/custom-slider/home.js" type="text/javascript"></script>
+
+    <!-- owl.carousel.min js
+    ============================================ -->
+    <script src="~/js/owl.carousel.min.js"></script>
+
+    <!-- jquery scrollUp js
+    ============================================ -->
+    <script src="~/js/jquery.scrollUp.min.js"></script>
+
+    <!-- price-slider js
+    ============================================ -->
+    <script src="~/js/price-slider.js"></script>
+
+    <!-- elevateZoom js
+    ============================================ -->
+    <script src="~/js/jquery.elevateZoom-3.0.8.min.js"></script>
+
+    <!-- jquery.bxslider.min.js
+    ============================================ -->
+    <script src="~/js/jquery.bxslider.min.js"></script>
+
+    <!-- mobile menu js
+    ============================================ -->
+    <script src="~/js/jquery.meanmenu.js"></script>
+
+    <!-- wow js
+    ============================================ -->
+    <script src="~/js/wow.js"></script>
+
+    <!-- plugins js
+    ============================================ -->
+    <script src="~/js/plugins.js"></script>
+
+    <!-- main js
+    ============================================ -->
+    <script src="~/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\appsettings.Development.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\appsettings.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\libman.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.deps.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.runtimeconfig.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.runtimeconfig.dev.json
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.dll
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.pdb
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.Views.dll
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\bin\Release\netcoreapp2.2\Neplex trading.Views.pdb
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.csprojAssemblyReference.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.RazorAssemblyInfo.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.RazorAssemblyInfo.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.AssemblyInfoInputs.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.AssemblyInfo.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.TagHelpers.input.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.TagHelpers.output.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.RazorCoreGenerate.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Account\AccessDenied.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Account\Login.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Account\Register.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Admin\CreateRole.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Admin\EditRole.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Admin\EditUsersInRole.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Admin\ListRoles.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\Create.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\Delete.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\Details.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\Edit.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\Index.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Categories\ProductByCategory.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Home\About.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Home\Contact.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\AdminIndex.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\Create.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\Delete.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\Edit.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Products\ProductSearch.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\Components\ShoppingCartBucket\Default.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\Error.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\NotFound.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\_Layout.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\ShoppingCart\Index.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\_ViewImports.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Razor\Views\_ViewStart.cshtml.g.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.RazorTargetAssemblyInfo.cache
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.RazorTargetAssemblyInfo.cs
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.Views.pdb
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.dll
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.pdb
+C:\Users\Saad ur rehman\source\repos\Neplex trading\Neplex trading\obj\Release\netcoreapp2.2\Neplex trading.csproj.CopyComplete

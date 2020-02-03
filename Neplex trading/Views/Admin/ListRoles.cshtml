@@ -1,0 +1,42 @@
+﻿@model IEnumerable<IdentityRole>
+@{
+    ViewData["Title"] = "List Of Roles";
+}
+
+<h2>List Of Roles</h2>
+
+@if (Model.Any())
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Role Name</th>
+                <th></th>
+                <th></th>
+            </tr>
+
+        </thead>
+        <tbody>
+            @foreach (var role in Model)
+            {
+                <tr>
+                    <td>@role.Name</td>
+                    <td><a asp-action="EditRole" asp-route-id="@role.Id" >Edit Role</a></td>
+                    <td><a >Delete Role</a></td>
+
+                </tr>
+
+            }
+        </tbody>
+    </table>
+    <br />
+    <a class="btn btn-danger" asp-controller="Admin" asp-action="CreateRole">Create Role</a>
+
+}
+else
+{
+    <p>No roles are defined yet.</p>
+    <a class="btn btn-danger" asp-controller="Admin" asp-action="CreateRole">Create Role</a>
+}
+
+

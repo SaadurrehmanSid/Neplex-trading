@@ -1,0 +1,93 @@
+﻿@model RegisterVM
+@{
+    ViewData["Title"] = "Register";
+}
+
+<script src="~/lib/jquery/jquery.js"></script>
+<script src="~/lib/jquery-validate/jquery.validate.js"></script>
+<script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-inner">
+                    <ul>
+                        <li class="home">
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                            <span><i class="fa fa-angle-right"></i></span>
+                        </li>
+                        <li class="category3"><span>Register</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="customer-login-area">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-6 col-xs-12">
+                <div class="customer-register my-account">
+                    <form method="post" asp-controller="Account" asp-action="Register">
+                        <div class="form-fields">
+                            <h2>Register</h2>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="Name"></label>
+                                <input asp-for="Name" class="input-text">
+                                <span asp-validation-for="Name"></span>
+                            </p>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="Email"></label>
+                                <input asp-for="Email" class="input-text" />
+                                <span asp-validation-for="Email"></span>
+                            </p>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="PhoneNumber"></label>
+                                <input asp-for="PhoneNumber" class="input-text" />
+                                <span asp-validation-for="PhoneNumber"></span>
+                            </p>
+                            <p class="form-row form-row-wide">
+
+                            </p>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="Password"></label>
+                                <input asp-for="Password" class="input-text" />
+                                <span asp-validation-for="Password"></span>
+                            </p>
+                            <p class="form-row form-row-wide">
+                                <label asp-for="ConfirmPassword"></label>
+                                <input asp-for="ConfirmPassword" class="input-text" />
+                                <span asp-validation-for="ConfirmPassword"></span>
+                            </p>
+                        </div>
+                        <div class="form-action">
+                            <div class="actions-log">
+                                <input type="submit" class="button" name="register" value="Register">
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

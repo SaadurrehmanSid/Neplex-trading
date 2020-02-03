@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewData["Title"] = "NotFound";
+}
+
+<div class="breadcrumbs">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container-inner">
+                    <ul>
+                        <li class="home">
+                            <a asp-controller="Home" asp-action="Index">Home</a>
+                            <span><i class="fa fa-angle-right"></i></span>
+                        </li>
+                        <li class="category3"><span>404 Error</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="not-found">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-not-found">
+                    <h1 class="entry-title">Not Found.</h1>
+                    <h2 class="small-title">You know what that means? It means the page you're looking for isn't here.</h2>
+                    <p><strong>If all else fails, you can always head back <a title="Back to Home" asp-controller="Home" asp-action="Index">Home</a> and start over.</strong></p>
+                    <a class="go-to-home" asp-controller="Home" asp-action="Index">Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,42 @@
+﻿
+
+@model ShoppingCartVM
+
+
+<div class="disflow">
+    <div class="circle-shopping expand">
+        <div class="shopping-carts text-right">
+            <div class="cart-toggler">
+                <a href="#"><i class="icon-bag"></i></a>
+                @if (Model.ShoppingCart.ShoppingCartItems.Count > 0)
+                {
+                    <a href="#"><span class="cart-quantity">@Model.ShoppingCart.ShoppingCartItems.Count</span></a>
+
+                }
+            </div>
+            <div class="restrain small-cart-content">
+                <ul class="cart-list">
+                    @foreach (var item in Model.ShoppingCart.ShoppingCartItems)
+                    {
+                        <li>
+                            <a class="sm-cart-product" asp-controller="Products" asp-action="Details" asp-route-id="@item.Product.ProductId">
+                                <img src="~/img/@item.Product.ProductImage" alt="">
+                            </a>
+                            <div class="small-cart-detail">
+                                <a class="remove" asp-controller="ShoppingCart" asp-action="RemoveFromShoppingCart"  asp-route-id="@item.Product.ProductId"><i class="fa fa-times-circle"></i></a>
+                                <a class="small-cart-name" href="product-details.html">@item.Product.ProductName</a>
+                                <span class="quantitys"><strong>@item.Amount</strong>x<span>@item.Product.Price</span></span>
+                            </div>
+                        </li>
+                    }
+
+
+                </ul>
+                <p class="total">Subtotal: <span class="amount">@Model.ShoppingCartTotal</span></p>
+                <p class="buttons">
+                    <a href="checkout.html" class="button">Checkout</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
